@@ -1,0 +1,280 @@
+*
+{
+box-sizing: border-box;
+}
+body{
+  text-align: center;
+  background-color: wheat;
+  line-height: 1.7;
+  font-family: 'Roboto', sans-serif;
+  max-width:100%;
+  margin:0 auto;
+ }
+#wrapper
+{
+    max-width:100%;
+    margin:0 auto;
+    background-color: white;
+}
+img{
+    max-width: 100%;
+}
+/* p{
+    padding: 0 10px 10px 10px;
+    margin-top:0;
+} */
+h2{
+    margin-bottom:7px;
+}
+/* logo styles */
+.logo
+{
+text-transform: capitalize;
+margin-top:0;
+}
+/* menu styles */
+.main-nav
+{
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;
+    
+}
+.main-nav li{
+    
+    padding: 12px;
+    background-color: white;
+    margin-bottom: 3px;
+}
+.main-nav a:link{
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.main-nav a:visited
+{
+    color: black;
+}
+.main-nav li:hover{
+    background-color:blanchedalmond;
+}
+.main-nav a
+{
+    display: block;
+}
+
+/* banner styles */
+.profile-img
+{
+    width:300px;
+    height: 200px;
+    padding: 25px 10px 0px;
+}
+.tagline
+{
+    color: darkslategray;
+}
+/* port styling */
+.port-heading
+{
+    padding: 10px;
+    margin: 25px;
+    text-transform: uppercase;
+}
+.port
+{
+    background-color: white;
+    margin:0 10px;
+}
+/* SKILL STYLES */
+.skill
+{
+    background-color: whitesmoke;
+}
+
+/* contact styles */
+.heading
+{
+    text-transform: uppercase;
+    padding-top: 25px;
+    margin:10px;
+}
+footer{
+    border-bottom: 1px solid #ccc;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav {
+    display: none;
+}
+.btmhead a:link
+{
+    color: black;
+    text-decoration: none;
+    font-size:25px;
+}
+.btmhead a:visited
+{
+    color:black;
+}
+
+
+.container:before, .container:after{
+    content: ' ';
+    display: table;
+}
+
+/* media queries */
+@media (min-width:768px)
+{
+    .main-nav a
+    {
+        display: block;
+    }
+    .main-nav li
+    {
+        display: inline-block;
+    }  
+       /*banner styles  */
+       .tagline
+       {
+           float:left;
+           width: 60%;
+           margin-left: 15px;
+           font-size: 23px;
+           
+       }
+       .profile-img
+       {
+           float: right;
+           width:35%;
+           
+        }
+        #banner{
+            padding: 10px;
+        }
+      .clearfix::after{
+           content: "";
+           display: table;
+           clear: both;
+       }
+       .col{
+           display: inline-block;
+           width:50%;     
+           margin-right: -4px;
+        }
+        /* footer navigation */
+        .btmhead
+        {
+            display: none;
+        }
+        .footer-nav
+        {
+            list-style-type: none;
+            margin: 0 10px;
+            padding: 0;
+        }
+        .footer-nav a:link{
+            text-decoration: none;
+            color:black;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        .footer-nav li{
+            padding: 12px;
+            margin-bottom: 3px;
+            margin-right: -4px;
+            display: inline-block;
+        }
+      
+        .footernav h3{
+            float: left;
+           margin:12px;
+        }
+        .footer-nav
+        {
+            float: right;
+            display: block;
+            
+        }
+        .footer-nav a:visited
+        {
+            color: black;
+        }
+        .container:before, .container:after{
+            content: ' ';
+            display: table;
+        }
+       
+}
+
+/* media queries for larger screen */
+@media (min-width:1024px)
+{
+   .container
+    {
+        max-width:90%;
+        margin:0 auto;
+    }
+    .logo{
+        float: left;
+        margin: 16px 10px;
+    }
+    nav
+    {
+        float: right;
+    }
+   .main-nav{
+    margin: 16px 10px;
+   }
+   .main-nav a
+   {
+       font-size:20px;
+   }
+  .main-nav li
+  {
+     background-color: wheat;
+      margin-right: -4px;
+  }
+    .clearfix::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* banner */
+    .profile-img
+    {
+        float:right;
+        width:35%;
+        clear: both;
+        
+    }
+   .tagline
+   {
+       float: left;
+       padding: 20px;
+       margin-right:10px;
+       margin-left:10px;
+       font-size: 25px;
+   }
+   
+   .col {
+    width: 100%;
+    padding-left: 6%;
+  }
+  .column
+  {
+    width: 30%;
+    float: left;
+  }
+  .port-heading
+  {
+      padding: 10px;
+      margin: 20px;
+  }
+ 
+}
