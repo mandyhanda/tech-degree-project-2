@@ -68,12 +68,13 @@ margin-top:0;
 .profile-img
 {
     width:300px;
-    height: 200px;
     padding: 25px 10px 0px;
 }
 .tagline
 {
     color: darkslategray;
+    text-align: center;
+    padding: 10px;
 }
 /* port styling */
 .port-heading
@@ -85,13 +86,9 @@ margin-top:0;
 .port
 {
     background-color: white;
-    margin:0 10px;
+    margin:0 12px;
 }
-/* SKILL STYLES */
-.skill
-{
-    background-color: whitesmoke;
-}
+
 
 /* contact styles */
 .heading
@@ -115,25 +112,59 @@ ul {
 {
     color: black;
     text-decoration: none;
-    font-size:25px;
+    font-size:20px;
+    font-weight: bolder;
 }
 .btmhead a:visited
 {
     color:black;
 }
 
-#wrapper::before, #wrapper::after{
-    content: ' ';
-    display: table;
-}
+
 .container:before, .container:after{
     content: ' ';
     display: table;
 }
 
+.btmborder
+{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 40px;
+}
+.container
+{
+    max-width:90%;
+    margin:0 auto;
+}
+ .btmlogo
+{
+    font-size:20px;
+    display: inline-block;
+    margin-right:25%;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#wrapper::before, #wrapper::after{
+    content: ' ';
+    display: table;
+}
 /* media queries */
 @media (min-width:768px)
 {
+
+    .container
+    {
+        max-width:90%;
+        margin:0 auto;
+    }
+    nav
+    {
+        margin-bottom: 40px;
+    }
     .main-nav a
     {
         display: block;
@@ -143,24 +174,29 @@ ul {
         display: inline-block;
     }  
        /*banner styles  */
+       #home{
+           padding-bottom: 60px;
+       }
        .tagline
        {
            float:left;
-           width: 60%;
-           margin-left: 15px;
-           font-size: 23px;
+           width: 55%;
+           margin: 0 12px;
+           padding-left: 0;
+           font-size: 22px;
+           text-align: left;
            
        }
        .profile-img
        {
            float: right;
            width:35%;
-           padding-bottom: 8px;
+           padding-right:0;
+           margin-right: 12px;
+          
            
         }
-        #banner{
-            padding: 10px;
-        }
+    
       .clearfix::after{
            content: "";
            display: table;
@@ -169,7 +205,7 @@ ul {
        .col{
            display: inline-block;
            width:50%;     
-           margin-right: -4px;
+           margin-right: -5px;
         }
         /* footer navigation */
         .btmhead
@@ -179,7 +215,7 @@ ul {
         .footer-nav
         {
             list-style-type: none;
-            margin: 0 10px;
+            margin: 0 12px;
             padding: 0;
         }
         .footer-nav a:link{
@@ -209,6 +245,7 @@ ul {
         {
             color: black;
         }
+        
         #wrapper::before, #wrapper::after{
             content: ' ';
             display: table;
@@ -226,14 +263,11 @@ ul {
     }
     .logo{
         float: left;
-        margin: 16px 10px;
-    }
-    nav
-    {
-        float: right;
+        margin: 16px 12px;
     }
    .main-nav{
-    margin: 16px 10px;
+    margin: 16px 0px 16px 16px;
+    float: right;
    }
    .main-nav a
    {
@@ -242,7 +276,12 @@ ul {
   .main-nav li
   {
      background-color: wheat;
-      margin-right: -4px;
+  }
+  .main-nav li:hover{
+      background-color: wheat;
+  }
+  .main-nav a:hover{
+      color:grey;
   }
     .clearfix::after{
         content: "";
@@ -253,32 +292,42 @@ ul {
     .profile-img
     {
         float:right;
-        width:32%;
+        width:30%;
         clear: both;
         
     }
    .tagline
    {
        float: left;
-       padding: 20px;
-       margin-right:10px;
+       padding: 20px 20px 20px 0;
+       margin-right:12px;
        margin-left:10px;
        font-size: 25px;
+       text-align: justify;
    }
    
    .col {
     width: 100%;
-    padding-left: 6%;
+    padding-left:0%;
   }
   .column
   {
     width: 30%;
     float: left;
+    margin: 0 13px;
   }
   .port-heading
   {
       padding: 10px;
       margin: 20px;
   }
+  .container:before, .container:after{
+    content: ' ';
+    display: table;
+}
+#wrapper::before, #wrapper::after{
+    content: ' ';
+    display: table;
+}
  
 }
