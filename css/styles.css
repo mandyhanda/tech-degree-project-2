@@ -139,8 +139,11 @@ ul {
  .btmlogo
 {
     font-size:20px;
-    display: inline-block;
-    margin-right:25%;
+      float: left;
+}
+.btmhead
+{
+    float: right;
 }
 
 .clearfix::after{
